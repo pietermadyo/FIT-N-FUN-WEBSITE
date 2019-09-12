@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F136772C-84F2-4082-A3A0-58C268DE0464}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FITNFUN_7923_WEB</RootNamespace>
+    <AssemblyName>FITNFUN_7923_WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.0.0\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Owin.1.0.0\lib\net45\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.1.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contact.aspx" />
+    <Content Include="css\assets\arrowleft.png" />
+    <Content Include="css\assets\arrowright.png" />
+    <Content Include="css\assets\arrow_left.png" />
+    <Content Include="css\assets\arrow_left2.png" />
+    <Content Include="css\assets\arrow_right.png" />
+    <Content Include="css\assets\arrow_right2.png" />
+    <Content Include="css\assets\boxed_bgtile.png" />
+    <Content Include="css\assets\bullet.png" />
+    <Content Include="css\assets\bullets.png" />
+    <Content Include="css\assets\bullets2.png" />
+    <Content Include="css\assets\bullet_boxed.png" />
+    <Content Include="css\assets\coloredbg.png" />
+    <Content Include="css\assets\large_left.png" />
+    <Content Include="css\assets\large_right.png" />
+    <Content Include="css\assets\loader.gif" />
+    <Content Include="css\assets\navigdots.png" />
+    <Content Include="css\assets\navigdots_bgtile.png" />
+    <Content Include="css\assets\shadow1.png" />
+    <Content Include="css\assets\shadow2.png" />
+    <Content Include="css\assets\shadow3.png" />
+    <Content Include="css\assets\small_left.png" />
+    <Content Include="css\assets\small_left_boxed.png" />
+    <Content Include="css\assets\small_right.png" />
+    <Content Include="css\assets\small_right_boxed.png" />
+    <Content Include="css\assets\timer.png" />
+    <Content Include="css\bootstrap-margin-padding.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\revolution-slider.css" />
+    <Content Include="DisplayMember.aspx" />
+    <Content Include="EntryIzinInstruktur.aspx" />
+    <Content Include="images\blog\b1.jpg" />
+    <Content Include="images\blog\blog-large-1.jpg" />
+    <Content Include="images\blog\blog-large-2.jpg" />
+    <Content Include="images\blog\blog-large-3.jpg" />
+    <Content Include="images\blog\f1.jpg" />
+    <Content Include="images\blog\f2.jpg" />
+    <Content Include="images\blog\f3.jpg" />
+    <Content Include="images\blog\s1.jpg" />
+    <Content Include="images\blog\s2.jpg" />
+    <Content Include="images\blog\s3.jpg" />
+    <Content Include="images\courses\1.jpg" />
+    <Content Include="images\courses\2.jpg" />
+    <Content Include="images\courses\3.jpg" />
+    <Content Include="images\gallery\1.jpg" />
+    <Content Include="images\gallery\10.jpg" />
+    <Content Include="images\gallery\2.jpg" />
+    <Content Include="images\gallery\3.jpg" />
+    <Content Include="images\gallery\4.jpg" />
+    <Content Include="images\gallery\5.jpg" />
+    <Content Include="images\gallery\6.jpg" />
+    <Content Include="images\gallery\7.jpg" />
+    <Content Include="images\gallery\8.jpg" />
+    <Content Include="images\gallery\9.jpg" />
+    <Content Include="images\gallery\gallery-1.jpg" />
+    <Content Include="images\gallery\gallery-2.jpg" />
+    <Content Include="images\gallery\gallery-3.jpg" />
+    <Content Include="images\gallery\gallery-4.jpg" />
+    <Content Include="images\gallery\gallery-5.jpg" />
+    <Content Include="images\home02-1.jpg" />
+    <Content Include="images\icons\caret-down.png" />
+    <Content Include="images\icons\icon-bullet.png" />
+    <Content Include="images\icons\icon-calendar.png" />
+    <Content Include="images\icons\icon-next-1.png" />
+    <Content Include="images\icons\icon-prev-1.png" />
+    <Content Include="images\icons\icon-quote.png" />
+    <Content Include="images\logo-white.png" />
+    <Content Include="images\logo1.png" />
+    <Content Include="images\main-slider\1.jpg" />
+    <Content Include="images\main-slider\2.jpg" />
+    <Content Include="images\main-slider\3.jpg" />
+    <Content Include="images\parallax\image-1.jpg" />
+    <Content Include="images\parallax\image-2.jpg" />
+    <Content Include="images\parallax\image-3.jpg" />
+    <Content Include="images\parallax\image-4.jpg" />
+    <Content Include="images\photos\1.jpg" />
+    <Content Include="images\photos\2.jpg" />
+    <Content Include="images\photos\3.jpg" />
+    <Content Include="images\photos\4.jpg" />
+    <Content Include="images\photos\5.jpg" />
+    <Content Include="images\photos\6.jpg" />
+    <Content Include="images\photos\ab1.jpg" />
+    <Content Include="images\photos\about01.jpg" />
+    <Content Include="images\photos\about02.jpg" />
+    <Content Include="images\photos\about03.jpg" />
+    <Content Include="images\photos\about04.jpg" />
+    <Content Include="images\photos\about05.jpg" />
+    <Content Include="images\photos\about06.jpg" />
+    <Content Include="images\photos\ct1.jpg" />
+    <Content Include="images\photos\ct2.jpg" />
+    <Content Include="images\photos\ct3.jpg" />
+    <Content Include="images\photos\ct4.jpg" />
+    <Content Include="images\photos\ct5.jpg" />
+    <Content Include="images\photos\d01.jpg" />
+    <Content Include="images\photos\pricing-1.jpg" />
+    <Content Include="images\photos\pricing-2.jpg" />
+    <Content Include="images\photos\pricing-3.jpg" />
+    <Content Include="images\photos\testimonial-1.jpg" />
+    <Content Include="images\photos\testimonial-2.jpg" />
+    <Content Include="images\photos\testimonial-3.jpg" />
+    <Content Include="images\photos\testimonial-4.jpg" />
+    <Content Include="images\resource\author-thumb-2.jpg" />
+    <Content Include="images\resource\author-thumb-3.jpg" />
+    <Content Include="images\resource\author-thumb.jpg" />
+    <Content Include="images\resource\header-v5-bg.png" />
+    <Content Include="images\resource\image-2.png" />
+    <Content Include="images\resource\profile-image.jpg" />
+    <Content Include="images\resource\thumb-1.jpg" />
+    <Content Include="images\resource\thumb-2.jpg" />
+    <Content Include="images\resource\thumb-3.jpg" />
+    <Content Include="images\resource\thumb-4.jpg" />
+    <Content Include="images\resource\thumb-5.jpg" />
+    <Content Include="images\resource\thumb-6.jpg" />
+    <Content Include="images\shop\1.jpg" />
+    <Content Include="images\shop\2.jpg" />
+    <Content Include="images\shop\3.jpg" />
+    <Content Include="images\shop\4.jpg" />
+    <Content Include="images\shop\5.jpg" />
+    <Content Include="images\shop\b1.jpg" />
+    <Content Include="images\shop\s1.jpg" />
+    <Content Include="images\shop\s2.jpg" />
+    <Content Include="images\shop\s3.jpg" />
+    <Content Include="images\team\Depositphotos_3299455_original-270x220.jpg" />
+    <Content Include="images\team\team-1.jpg" />
+    <Content Include="images\team\team-2.jpg" />
+    <Content Include="images\team\team-3.jpg" />
+    <Content Include="images\team\team-4.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Instruktur.aspx" />
+    <Content Include="JadwalUpdateIns.aspx" />
+    <Content Include="JadwalUpdateMO.aspx" />
+    <Content Include="js\googlemaps.js" />
+    <Content Include="js\jquery.datepick.min.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.mixitup.min.js" />
+    <Content Include="js\jquery.plugin.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\revolution.min.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\validate.js" />
+    <Content Include="js\wow.js" />
+    <Content Include="KonfirmasiIzinMO.aspx" />
+    <Content Include="LaporanBulanan.aspx" />
+    <Content Include="LaporanInstruktur.aspx" />
+    <Content Include="LaporanJumlahStatusMember.aspx" />
+    <Content Include="LaporanPendapatanPerBulanDalamSetahun.aspx" />
+    <Content Include="LaporanTransaksiHarian.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="ManagerOP.aspx" />
+    <Content Include="Member.aspx" />
+    <Content Include="ViewDataJadwal.aspx" />
+    <Content Include="ViewDataJadwalUptodate.aspx" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\player\YTPlayer.css" />
+    <Content Include="css\pro-bars.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.html" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="css\fonts\flexslider-icon.eot" />
+    <Content Include="css\fonts\flexslider-icon.svg" />
+    <Content Include="css\fonts\flexslider-icon.ttf" />
+    <Content Include="css\fonts\flexslider-icon.woff" />
+    <Content Include="css\fonts\flexslider-icond41d.eot" />
+    <Content Include="css\player\ytp-regular.eot" />
+    <Content Include="css\player\ytp-regular.ttf" />
+    <Content Include="fonts\fontawesome-webfont862f.eot" />
+    <Content Include="fonts\fontawesome-webfont862f.svg" />
+    <Content Include="fonts\fontawesome-webfont862f.ttf" />
+    <Content Include="fonts\fontawesome-webfont862f.woff" />
+    <Content Include="fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\revicons90c6.eot" />
+    <Content Include="fonts\revicons90c6.svg" />
+    <Content Include="fonts\revicons90c6.ttf" />
+    <Content Include="fonts\revicons90c6.woff" />
+    <Content Include="images\blog\Thumbs.db" />
+    <Content Include="images\clients\Thumbs.db" />
+    <Content Include="images\courses\Thumbs.db" />
+    <Content Include="images\gallery\Thumbs.db" />
+    <Content Include="images\icons\Thumbs.db" />
+    <Content Include="images\main-slider\Thumbs.db" />
+    <Content Include="images\parallax\Thumbs.db" />
+    <Content Include="images\photos\Thumbs.db" />
+    <Content Include="images\resource\Thumbs.db" />
+    <Content Include="images\shop\Thumbs.db" />
+    <Content Include="images\team\Thumbs.db" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery.appear.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.fitvids.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.mb.YTPlayer.js" />
+    <Content Include="js\jquery.parallax-1.1.3.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.slabtext.js" />
+    <Content Include="js\jquery.superslides.js" />
+    <Content Include="js\modernizr-latest.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="js\SmoothScroll.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayMember.aspx.cs">
+      <DependentUpon>DisplayMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayMember.aspx.designer.cs">
+      <DependentUpon>DisplayMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryIzinInstruktur.aspx.cs">
+      <DependentUpon>EntryIzinInstruktur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntryIzinInstruktur.aspx.designer.cs">
+      <DependentUpon>EntryIzinInstruktur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Instruktur.aspx.cs">
+      <DependentUpon>Instruktur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Instruktur.aspx.designer.cs">
+      <DependentUpon>Instruktur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalUpdateIns.aspx.cs">
+      <DependentUpon>JadwalUpdateIns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JadwalUpdateIns.aspx.designer.cs">
+      <DependentUpon>JadwalUpdateIns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JadwalUpdateMO.aspx.cs">
+      <DependentUpon>JadwalUpdateMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JadwalUpdateMO.aspx.designer.cs">
+      <DependentUpon>JadwalUpdateMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KonfirmasiIzinMO.aspx.cs">
+      <DependentUpon>KonfirmasiIzinMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KonfirmasiIzinMO.aspx.designer.cs">
+      <DependentUpon>KonfirmasiIzinMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBulanan.aspx.cs">
+      <DependentUpon>LaporanBulanan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaporanBulanan.aspx.designer.cs">
+      <DependentUpon>LaporanBulanan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanInstruktur.aspx.cs">
+      <DependentUpon>LaporanInstruktur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaporanInstruktur.aspx.designer.cs">
+      <DependentUpon>LaporanInstruktur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanJumlahStatusMember.aspx.cs">
+      <DependentUpon>LaporanJumlahStatusMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaporanJumlahStatusMember.aspx.designer.cs">
+      <DependentUpon>LaporanJumlahStatusMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPendapatanPerBulanDalamSetahun.aspx.cs">
+      <DependentUpon>LaporanPendapatanPerBulanDalamSetahun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaporanPendapatanPerBulanDalamSetahun.aspx.designer.cs">
+      <DependentUpon>LaporanPendapatanPerBulanDalamSetahun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanTransaksiHarian.aspx.cs">
+      <DependentUpon>LaporanTransaksiHarian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LaporanTransaksiHarian.aspx.designer.cs">
+      <DependentUpon>LaporanTransaksiHarian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerOP.aspx.cs">
+      <DependentUpon>ManagerOP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerOP.aspx.designer.cs">
+      <DependentUpon>ManagerOP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDataJadwal.aspx.cs">
+      <DependentUpon>ViewDataJadwal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDataJadwal.aspx.designer.cs">
+      <DependentUpon>ViewDataJadwal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDataJadwalUptodate.aspx.cs">
+      <DependentUpon>ViewDataJadwalUptodate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDataJadwalUptodate.aspx.designer.cs">
+      <DependentUpon>ViewDataJadwalUptodate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\IzinInstrukturControl.cs" />
+    <Compile Include="Control\JadwalControl.cs" />
+    <Compile Include="Control\LoginControl.cs" />
+    <Compile Include="Control\MemberControl.cs" />
+    <Compile Include="Control\TransaksiControl.cs" />
+    <Compile Include="DS_WEB_FITNFUN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_WEB_FITNFUN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\IzinInstruktur.cs" />
+    <Compile Include="Entity\MemberEntity.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DS_WEB_FITNFUN.xsc">
+      <DependentUpon>DS_WEB_FITNFUN.xsd</DependentUpon>
+    </Content>
+    <Content Include="css\style.scss" />
+    <None Include="DS_WEB_FITNFUN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_WEB_FITNFUN.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DS_WEB_FITNFUN.xss">
+      <DependentUpon>DS_WEB_FITNFUN.xsd</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Boundary\" />
+    <Folder Include="images\icons\preloader.GIF\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49849/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
